@@ -1,0 +1,56 @@
+/* Movimientos aleatorios */
+
+@keyframes move1 {
+  0% {
+    transform: translate(0, 0) scale(1.5);
+  }
+  50% {
+    transform: translate(calc(random() * 1vw), calc(random() * 1vh)) scale(1.53);;
+  }
+  100% {
+    transform: translate(0, 0) scale(1.5);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translate(0, 0) scale(1.5);
+  }
+  50% {
+    transform: translate(calc(random() * 1vw), calc(random() * 1vh)) scale(1.53);;
+  }
+  100% {
+    transform: translate(0, 0) scale(1.5);
+  }
+}
+@keyframes move3 {
+  0% {
+    transform: translate(0, 0) scale(1.5);
+  }
+  50% {
+    transform: translate(calc(random() * 1vw), calc(random() * 1vh)) scale(1.53);;
+  }
+  100% {
+    transform: translate(0, 0) scale(1.5);
+  }
+}
+
+/* Gradado pasivo */
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(-40deg);
+  }
+  0% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+
+@keyframes ilustrationIn {
+  100% {
+    transform: translateY(50px)
+  }
+}

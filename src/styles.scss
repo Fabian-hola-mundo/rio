@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/base";
+@import "./styles/tokens/tokens";
+@import "./styles/tokens/colors.module";
+@import "./styles/tokens/typography.module";
+@import "./themes";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  @extend .background;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: var(--md-sys-color-on-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+  color: var(--md-sys-color-on-background);
+}
+
+p,
+b,
+strong,
+ul,
+li,
+td {
+  margin: 0 !important;
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+a {
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  @extend .display-large;
+}
+
+h2 {
+  @extend .headline-large;
+}
+
+h3 {
+  @extend .headline-medium;
+  line-height: normal;
+}
+
+h6 {
+  @extend .title-small;
+  line-height: normal;
+}
+
+.fill-svg {
+  @extend .primary-fill;
+}
+
+%images-light {
+  --main-logo: '../../assets/layout/logo-light.png'
+}
+
+%images-dark {
+  --main-logo: '../../assets/layout/logo-dark.png'
+}
+
+::ng-deep {
+  .pac-container {
+    @extend .surface;
+    box-shadow: 0px 6px 20px rgb(0 0 0 / 81%);
+    @extend .outline-variant-line;
+    border-radius: 8px;
+    & .pac-icon {
+      @extend .on-surface-text;
+    }
+    & .pac-item {
+      @extend .outline-variant-line;
+      padding: 8px 8px;
+      & .pac-item-query {
+        @extend .on-surface-text;
+        & .pac-matched {
+          @extend .primary-text;
+        }
+      }
+    }
+  }
+}
+
