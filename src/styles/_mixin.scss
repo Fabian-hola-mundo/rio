@@ -1,0 +1,25 @@
+@mixin textElipsis {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+@keyframes hunch {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@mixin circle-size ($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}

@@ -1,0 +1,12 @@
+::ng-deep {
+  & .mat-mdc-menu-content {
+    background-color: var(--md-sys-color-surface);
+    & * span, mat-icon {
+      color: var(--md-sys-color-on-surface-variant) !important;
+    }
+  }
+
+  .mat-mdc-menu-item {
+    @extend %horizontalPadding;
+  }
+}

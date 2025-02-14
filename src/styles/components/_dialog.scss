@@ -1,0 +1,13 @@
+.mat-mdc-dialog-actions {
+  @extend %fullPadding;
+}
+
+.mat-mdc-dialog-surface {
+  background-color: var(--md-sys-color-surface) !important;
+}
+
+::ng-deep {
+  .mat-mdc-dialog-container {
+    border-radius: 16px !important;
+  }
+}

@@ -1,0 +1,12 @@
+main {
+  width: 100%;
+  @include flexColumn;
+  align-items: center;
+  gap: 200px;
+  overflow: hidden;
+  position: relative;
+  & section {
+    padding: 16px 24px;
+    max-width: 1200px;
+  }
+}

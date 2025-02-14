@@ -1,0 +1,70 @@
+//animations
+
+@forward "./animations/show.scss";
+
+//Components
+
+@import "./components/avatar";
+@import "./components/button";
+@import "./components/markdown";
+@import "./components/menu";
+@import "./components/tables";
+@import "./components/snackbar";
+@import "./components/bottom_sheet";
+@import "./components/button-icon";
+@import "./components/divider";
+@import "./components/accordion";
+@import "./components/scroll";
+@import "./components/skeleton";
+@import "./components/dialog";
+@import "./components/input";
+@import "./components/select";
+@import "./components/select-list";
+@import "./components/sidenav";
+@import "./components/overlay-backdrop";
+
+//Maqeuta
+
+@import "./variables";
+@import "./mixin";
+@import "./placeholder";
+
+html {
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    section {
+      max-width: $maxWidth;
+      margin-top: 70px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.flex_center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  border-radius: 24px !important;
+}
+
+.mat-mdc-dialog-content {
+  max-height: 99vh !important;
+}
